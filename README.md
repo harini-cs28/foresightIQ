@@ -4,7 +4,9 @@
 
 # 🏭 ForesightIQ
 
-AI-Powered Operations Copilot for Smart Manufacturing
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1200&color=00E5FF&center=true&vCenter=true&width=800&lines=AI-Powered+Operations+Copilot;Predict+•+Prevent+•+Perform;Smart+Manufacturing+Intelligence" alt="Typing SVG" />
+</p>
 
 
 ## 🚀 Overview
@@ -22,6 +24,17 @@ ForesightIQ is an AI-powered Operations Copilot for smart manufacturing that pre
 - 📅 End-of-Day Summary
 - ⚡ AI Confidence Score
 
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| ⚛️ React | Frontend UI |
+| 🔷 TypeScript | Type-safe Development |
+| ⚡ Vite | Fast Build Tool |
+| 🎨 CSS3 | Styling & Responsive Design |
+| 🤖 Gemini AI | AI-powered Insights & Copilot |
+| 📊 Recharts | Interactive Data Visualization |
+| 🛠 Git & GitHub | Version Control |
 
 ## 🚀 Future Scope
 
