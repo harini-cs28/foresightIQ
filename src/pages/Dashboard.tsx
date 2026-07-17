@@ -148,7 +148,7 @@ export default function Dashboard() {
             animate={{ opacity: 1, y: 0 }}
             whileHover={{ y: -3, boxShadow: `0 8px 32px ${card.color}18` }}
             whileTap={{ scale: 0.98 }}
-            transition={{ delay: i * 0.07, hover: { duration: 0.2 } }}
+            transition={{ delay: i * 0.07,duration: 0.2}}
             onClick={() => setSelectedCard(selectedCard === i ? null : i)}
             className="p-4 rounded-2xl glass-card glass-card-hover cursor-pointer"
             style={selectedCard === i ? { borderColor: card.color, boxShadow: `0 0 24px ${card.color}22` } : {}}
@@ -352,7 +352,7 @@ export default function Dashboard() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   whileHover={{ x: 3, background: 'rgba(59,130,246,0.04)' }}
-                  transition={{ delay: 0.3 + i * 0.08, hover: { duration: 0.15 } }}
+                  transition={{delay: 0.3 + i * 0.08,duration: 0.15}}
                   className="flex items-start gap-3 p-2 rounded-xl cursor-pointer"
                   style={{ borderBottom: i < alerts.length - 1 ? '1px solid rgba(255,255,255,0.04)' : 'none' }}
                 >

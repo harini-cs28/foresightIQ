@@ -84,7 +84,9 @@ function SettingCard({
       <div className="flex items-start gap-4 flex-1">
         {Icon && (
           <div className="mt-0.5 p-2 rounded-lg flex-shrink-0" style={{ background: 'rgba(59,130,246,0.08)' }}>
-            <Icon size={16} style={{ color: '#3B82F6' }} />
+            <div style={{ color: "#3B82F6" }}>
+              <Icon size={16}/>
+              </div>
           </div>
         )}
         <div className="flex-1 min-w-0">
@@ -824,10 +826,9 @@ export default function Settings() {
               >
                 <div className="flex items-center gap-3">
                   <div className={`p-1.5 rounded-lg transition-all flex-shrink-0 ${isActive ? 'bg-blue-500/20' : 'bg-transparent'}`}>
-                    <Icon 
-                      size={16} 
-                      style={{ color: isActive ? '#3B82F6' : '#94A3B8' }} 
-                    />
+                    <div style={{ color: isActive ? "#3B82F6" : "#94A3B8" }}>
+                      <Icon size={16}/>
+                      </div>
                   </div>
                   <div className="min-w-0">
                     <span className={`text-sm font-medium transition-colors ${isActive ? 'text-white' : 'text-gray-400'}`}>

@@ -225,7 +225,7 @@ const useScrollToBottom = (deps: any[]) => {
 const Typewriter: React.FC<{ text: string; speed?: number; onDone?: () => void }> = ({ text, speed = 16, onDone }) => {
   const [chars, setChars] = useState(0)
   const [done, setDone] = useState(false)
-  const timer = useRef<ReturnType<typeof setTimeout>>()
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   useEffect(() => {
     setChars(0)
@@ -598,7 +598,7 @@ export default function CopilotLanding() {
   // ─── All computed values go after hooks ──────────────────────────────────
   const hour = new Date().getHours()
   const timeGreet = hour < 12 ? 'Good morning' : hour < 17 ? 'Good afternoon' : 'Good evening'
-  const isReturn = aiMemory.sessions > 1
+  const isReturn = aiMemory.isReturningUser
 
   const greetText = useMemo(() => {
     if (isReturn && aiMemory.hasDeferredMachines) {
@@ -1890,7 +1890,7 @@ export default function CopilotLanding() {
                 border: `1px solid ${kpi.color}1E`,
               }}
             >
-              <kpi.icon size={11} style={{ color: kpi.color, flexShrink: 0 }} />
+              <kpi.icon size={11} className="flex-shrink-0"/>
               <div>
                 <KpiCounter target={kpi.target} prefix={kpi.prefix} suffix={kpi.suffix} decimals={kpi.decimals} color={kpi.color} />
                 <div className="truncate" style={{ color: '#374151', fontSize: 8.5 }}>{kpi.label}</div>

@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Bot, Send, Mic, Paperclip, Sparkles, TrendingUp, AlertTriangle, Wrench, BarChart2, ChevronRight, RefreshCw } from 'lucide-react'
@@ -59,7 +60,7 @@ const QUICK_ACTIONS = [
 
 function formatContent(text: string, isAI: boolean) {
   const lines = text.split('\n')
-  const result: JSX.Element[] = []
+  const result: React.ReactNode[] = []
   let tableRows: string[][] = []
   let inTable = false
 
@@ -333,7 +334,7 @@ export default function AICopilot() {
           <motion.div
             className="flex items-center gap-3 p-3 rounded-2xl"
             style={{ background: 'rgba(17,24,39,0.92)', border: '1px solid rgba(59,130,246,0.2)' }}
-            whileFocusWithin={{ borderColor: 'rgba(59,130,246,0.45)', boxShadow: '0 0 0 3px rgba(59,130,246,0.08)' }}
+            whileFocus={{ borderColor: 'rgba(59,130,246,0.45)', boxShadow: '0 0 0 3px rgba(59,130,246,0.08)' }}
           >
             <Sparkles size={17} style={{ color: '#3B82F6', flexShrink: 0 }} />
             <input
