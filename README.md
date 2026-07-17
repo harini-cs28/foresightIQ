@@ -5,9 +5,8 @@
 # 🏭 ForesightIQ
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&pause=1200&color=00E5FF&center=true&vCenter=true&width=800&lines=AI-Powered+Operations+Copilot;Predict+•+Prevent+•+Perform;Smart+Manufacturing+Intelligence" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00E5FF&center=true&vCenter=true&width=900&size=28&lines=AI-Powered+Operations+Copilot;Predict+Prevent+Perform;Smart+Manufacturing+Intelligence" alt="Typing SVG">
 </p>
-
 
 ## 🚀 Overview
 
