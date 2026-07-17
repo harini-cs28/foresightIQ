@@ -225,7 +225,7 @@ const useScrollToBottom = (deps: any[]) => {
 const Typewriter: React.FC<{ text: string; speed?: number; onDone?: () => void }> = ({ text, speed = 16, onDone }) => {
   const [chars, setChars] = useState(0)
   const [done, setDone] = useState(false)
-  const timer = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
 
   useEffect(() => {
     setChars(0)

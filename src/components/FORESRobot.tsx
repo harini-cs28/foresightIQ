@@ -82,7 +82,7 @@ export default function FORESRobot({ state = 'idle', size = 220 }: FORESRobotPro
   const containerRef = useRef<HTMLDivElement>(null)
   const [cursorOffset, setCursorOffset] = useState({ x: 0, y: 0 })
   const [blinkPhase, setBlinkPhase]     = useState(false)
-  const blinkTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const blinkTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
 
   const isSpeaking    = state === 'speaking' || state === 'briefing'
   const isThinking    = state === 'thinking'
